@@ -1,0 +1,103 @@
+ *{margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;}
+a{color:#F7F7F7;
+  text-decoration: none;}
+li{list-style: none;}
+body{font-family: G마켓 산스 TTF;
+     font-size: 1.2rem; background-color: #F7F7F7;}
+.wrap{max-width: 1600px; 
+      margin: 5rem auto;}
+
+header{background-color: #161616}
+.head{height: 150px; 
+      display: flex; justify-content:flex-start;}
+.logo{width: 200px; margin-right: 6%; padding-top: 1.5%;}
+nav{width:70%; padding-top: 1%;}
+nav ul{margin: auto;}
+nav ul li{display: inline-block; margin:0% 3%; padding-top: 5%; font-weight: bold;}
+
+main{height:900px; background: url(img/main_bg.jpg) no-repeat; background-position: center; background-size: cover; position: relative; margin: 0 0 10% 0;}
+main img{width: 30%; position: absolute; transform: translate(130%,370%);}
+
+h1{margin: 2%;}
+.title{padding:0.6rem 0 0.6rem 0;width: 14%; min-width: 200px; color: #F7F7F7; text-align: center; font-size:1.5rem; margin: 2% 5%; font-weight:400; 
+       border: 7px solid; border-radius: 40px; background-color:#161616; }
+
+.notice{margin: 7% 7%; display:flex; justify-content: space-between;}
+.nsb{width: 100%; margin: 0 0 10% 0;}
+.nsb img{width: 95%;}
+
+.notice, .eduaca, .news{ margin: 2% 6%; width: 90%;}
+
+.banner{width: 100%; min-width: 200px; }
+.basb{height:700px; display:flex;justify-content: space-between; margin: 0 0 10% 0;}
+.ble{width: 50%;background:url(img/banner1.jpg); background-size: 100% 100%;}
+.bri{width: 50%; background:url(img/bannerri.jpg); background-size: 100% 100%;}
+.bri h1{text-align: center; font-size: 4rem; padding-top: 10%; color: rgb(44, 44, 136);}
+.bri p{text-align: center; font-size: 1.5rem; padding-bottom: 10%; font-weight: bold; color: rgb(44, 44, 136);}
+
+.eduaca{width: 96%; margin: 0 0 10% 0;}
+.edsb {max-width: 900px;
+            width: 98%;
+            margin: 5% auto;
+            display: flex;
+            justify-content: space-between;
+        }
+.ele {height: auto;
+            width: 80%;
+            background: #346751;
+            border-radius: 10%;
+            text-align: left;
+            font-size: 2.3rem;
+            font-weight:500;
+            color:#F7F7F7;
+            padding-top: 26%;}
+.eri {width: 60%;
+            height: auto;
+            margin-left: -30%;
+            margin-top: -1%;
+            z-index: 1;}
+.eri img {width: 100%;
+            height: 100%;
+            background: #F7F7F7;
+            border-radius: 100%;}
+.c {margin-left: 50%;
+    z-index: 2;}
+
+.news{display:flex; justify-content:space-around;padding-bottom:5%;}
+.nesb{width: 20%; margin: 0 0 10% 0;}
+.nesb img{width: 100%; border-radius: 30px;}
+
+.spbanner{height:600px; background: url(img/spbanner.jpg) no-repeat; background-size: 100% 100%; 
+    display:flex; justify-content: space-between;}
+    
+footer {height: 300px;
+        background-color: #161616; padding:0 20%;}
+.foot {text-align: center;
+       color:#F7F7F7;
+       padding-top: 4%; line-height :150%}
+.foot .logo {width: 50%;
+             margin: auto;}
+
+@media (max-width:600px) { 
+          .wrap{width: 96%; margin: 3rem auto;}
+          header{flex-direction: column; flex-wrap: wrap; gap:1.2rem;}
+          .logo img{width:170px; padding-top: 20%;}
+          nav{margin:10%; width:100%; font-size: 1rem;}
+          .title{width:40%; padding: 0.5rem 0 0.5rem 0; font-size: 1rem;}
+          main{height: 400px;}
+          .banner{height: 200px;}
+          .ble, .bri{height: 30%;}
+          .bri h1{font-size: 1.5rem;}
+          .bri p{font-size: 0.9rem;}
+          .ele{font-size: 1rem;}
+          .news{width: 96%; margin: auto; flex-wrap: wrap; gap:0.7rem}
+          .nesb{width: 48%;}
+          .spbanner{height: 180px;}
+          footer{padding: 0;}
+          .foot{font-size: 0.7rem; padding:6% 6%;}
+
+          main, .nsb, .banner, .eduaca, .nesb{margin: 0 0 15% 0;}
+        }
+          
