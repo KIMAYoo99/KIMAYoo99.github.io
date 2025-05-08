@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WOMAN</title>
+  <style>
+    body {
+      font-family: 'Pretendard', sans-serif;
+      margin: 0;
+      background: #fff;
+    }
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 20px;
+      gap: 20px;
+    }
+    .sidebar {
+      flex: 0 0 300px;
+    }
+    .sidebar h2 {
+      font-size: 18px;
+      margin-bottom: 10px;
+      text-align: right;
+    }
+    .category-list {text-align: right;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .category-list li {
+      margin-bottom: 10px;
+    }
+    .category-list a {
+      text-decoration: none;
+      color: #868484;
+      font-size: 14px;
+    }
+    .category-list a:hover {
+      color: #000000; font-weight: 600;
+    }
+    .main-content {
+      flex: 1;
+      min-width: 0;
+    }
+    .main-content h1 {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 20px;
+    }
+    .product-card {
+      display: flex;
+      flex-direction: column;
+      text-decoration: none;
+      color: inherit;
+    }
+    .product-card img {
+      width: 100%;
+      border-radius: 8px;
+      object-fit: cover;
+    }
+    .product-info {
+      margin-top: 10px;
+    }
+    .brand-name {
+      font-size: 12px;
+      color: #888;
+      margin-bottom: 4px;
+    }
+    .product-name {
+      font-size: 14px;
+      font-weight: 500;
+      margin-bottom: 6px;
+    }
+    .price {
+      font-size: 14px;
+      font-weight: bold;
+    }
+    /* 모바일 대응 */
+    @media (max-width: 768px) {
+      .sidebar {
+        flex: 1 1 100%;
+      }
+      .main-content {
+        flex: 1 1 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <!-- 사이드바 -->
+    <aside class="sidebar">
+      <h2>WOMAN</h2>
+      <ul class="category-list">
+        <li><a href="#">의류</a></li>
+        <li><a href="#">신발</a></li>
+        <li><a href="#">가방</a></li>
+        <li><a href="#">액세서리</a></li>
+      </ul>
+    </aside>
+
+    <!-- 메인 콘텐츠 -->
+     <!--1줄-->
+    <main class="main-content">
+      <h1>전체 베스트 상품</h1>
+      <div class="product-grid">
+        <a href="#" class="product-card">
+          <img src="sub/won4.jpg">
+          <div class="product-info">
+            <div class="brand-name">코어드</div>
+            <div class="product-name">[21차/예약배송][기장선택]Nonfade pintuck denim(raw denim)</div>
+            <div class="price">94,164won</div>
+          </div>
+        </a>
+
+        <a href="#" class="product-card">
+          <img src="sub/won5.jpg">
+          <div class="product-info">
+            <div class="brand-name">포 유어 아이즈 온리</div>
+            <div class="product-name">[5차]Clea Capri Pants (Black) </div>
+            <div class="price">128,000won</div>
+          </div>
+        </a>
+
+        <a href="#" class="product-card">
+          <img src="sub/won6.jpg">
+          <div class="product-info">
+            <div class="brand-name"> 유라고 </div>
+            <div class="product-name">[40차 리오더][유이수착용] Mac half trench coat_4colors</div>
+            <div class="price"> 164,000won</div>
+          </div>
+        </a>
+      </div>
+       <!--2줄-->
+      <br>
+      <main class="main-content">
+        <div class="product-grid">
+          <a href="#" class="product-card">
+            <img src="sub/won63.jpg">
+            <div class="product-info">
+              <div class="brand-name">부디무드라</div>
+              <div class="product-name">[4차 리오더]_[BEST] Diagonal jogger pants (Unisex)_7 Colors </div>
+              <div class="price">85,500won</div>
+            </div>
+          </a>
+  
+          <a href="#" class="product-card">
+            <img src="sub/won3.jpg">
+            <div class="product-info">
+              <div class="brand-name">으음키임</div>
+              <div class="product-name">[숏기장추가] 시그니처 세미 와이드 데님 팬츠_CREAM WHITE </div>
+              <div class="price"> 104,400won</div>
+            </div>
+          </a>
+  
+          <a href="#" class="product-card">
+            <img src="sub/won70.jpg">
+            <div class="product-info">
+              <div class="brand-name">드래곤 디퓨전</div>
+            <div class="product-name">[15% 추가쿠폰] 트리플 점프 스몰 8811 Dark Brown 드래곤백</div>
+            <div class="price"> 485,100won</div>
+            </div>
+          </a>
+        </div>
+        <!--3줄-->
+        <br>
+        <main class="main-content">
+          <div class="product-grid">
+            <a href="#" class="product-card">
+              <img src="sub/won77.jpg">
+              <div class="product-info">
+                <div class="brand-name">뉴발란스</div>
+            <div class="product-name">NBPDFS408G / U740AR2 (BRIGHTON GRAY)</div>
+            <div class="price"> 159,000won</div>
+              </div>
+            </a>
+    
+            <a href="#" class="product-card">
+              <img src="sub/won86.jpg">
+              <div class="product-info">
+                <div class="brand-name">락피쉬웨더웨어</div>
+            <div class="product-name">CLASSIC UMBRELLA SHORT-8 colors</div>
+            <div class="price"> 44,100won</div>
+              </div>
+            </a>
+    
+            <a href="#" class="product-card">
+              <img src="sub/won29.jpg">
+              <div class="product-info">
+                <div class="brand-name">스탠리</div>
+            <div class="product-name">[스탠리공식유통사] 퀜처 H2.0 플로우스테이트 텀블러 887ml</div>
+            <div class="price"> 49,000won</div>
+              </div>
+            </a>
+</body>
+</html>
