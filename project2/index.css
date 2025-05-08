@@ -35,7 +35,7 @@ nav ul{margin:auto;}
 
 .menu2 li:hover .submenu1{display: block; }
 .submenu1 li{padding:5px 0; transition:all 0.4s; }
-.submenu1 li a{ color:rgb(165, 165, 165);}    
+.submenu1 li a{ color:#404040;}    
 .submenu1 li:hover a{color:rgb(0, 0, 0); font-weight: bold;}
 
 .headicon{width: 200px;height: 100px; margin-top: 0%;}
