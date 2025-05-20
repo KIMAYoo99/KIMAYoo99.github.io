@@ -4,12 +4,58 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>베스트 아이템</title>
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <style>
+   .material-symbols-outlined {
+        font-variation-settings:
+        'FILL' 0,
+        'wght' 0,
+        'GRAD' 0,
+        'opsz' NaN
+      }
+      </style>
   <style>
     body {
       font-family: 'Pretendard', sans-serif;
       margin: 0;
       background: #fff;
     }
+
+    *{margin:0; padding: 0; box-sizing: border-box;}
+  li{list-style: none;}
+  a{color: black; text-decoration: none;}
+  html, body{font-family:sans-serif; height: 100%;}
+  .wrap{width: 1900px; margin: auto;}
+
+header{width: 100%;background-color: rgb(255, 255, 255); position: relative;}
+.head{ display:flex;justify-content: space-between;margin-top: 1%;}
+.logo{width: 200px; margin-top: 1.5%; margin:2%;}
+
+nav{  text-align:left; margin-top: 1%; margin:1%;}
+nav ul{margin:auto;}
+
+.menu1> ul>li{display: inline-block; padding:0 0.5%;}
+.menu1{height: 30px; margin-bottom:20px;}
+.menu1 li:hover h2{color:rgb(112, 112, 112);}
+.menu2{width:1000px; }
+.menu2 li{display:inline-block; width:160px;
+    text-align:center; position:relative;
+    transition: all 0.9s;  padding:10px 0}
+
+.menu2 li .submenu1{display: none;
+    background-color: rgba(255,255,255,0.9);
+    border:2px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    position:absolute;
+    z-index:9; width:100%; margin-top:5px;}
+
+.menu2 li:hover .submenu1{display: block; }
+.submenu1 li{padding:5px 0; transition:all 0.4s; }
+.submenu1 li a{ color:rgb(77, 77, 77);}    
+.submenu1 li:hover a{color:rgb(0, 0, 0); font-weight: bold;}
+
+.headicon{width: 200px;height: 100px; margin-top: 0%;}
+
     .container {
       display: flex;
       flex-wrap: wrap;
@@ -81,6 +127,29 @@
       font-size: 14px;
       font-weight: bold;
     }
+
+    footer{width: 100%; margin-top: 1%;}
+
+    .fo1{ width:90%; display: flex; justify-content:space-between; margin-left: 3%;}
+    .fosb1{width:60%;}
+    .fosb1>ul>li{display:inline-block; text-align: center; 
+      margin-top:1%; border: 2px solid; padding:0.5%; background-color: black;}
+    .sns{width:60%;}
+    .sns ul{margin: auto; display:flex; justify-content: end;}
+    .sns>ul>li{display: inline-block;}
+    .sns img{width: 40px;}
+
+    .fo2{height: 20vh; display: flex; justify-content:space-between; margin: 1% 1.3% 0 3%;}
+    .fonotice{max-width: 500px; width: 60%;}
+    .fosb2{width: 40%;}
+    .fosb2>ul{width: 100%; margin-left:1%;}
+
+    .fo3{height: 15vh; margin-left: 2%;}
+    .fo3>ul{ display: flex;}
+    .fo3>ul>li{display: inline-block; margin:0 1%;}
+    .folink>ul{display: flex; font-weight: bold; margin-bottom: 1%;}
+    .folink>ul>li{display: inline-block; margin:0 1%;}
+
     /* 모바일 대응 */
     @media (max-width: 768px) {
       .sidebar {
@@ -93,6 +162,61 @@
   </style>
 </head>
 <body>
+  <header>
+        <div class="head wrap">
+          <div class="logo"><a href="index.html"><img src="img/logo.png"></a></div>
+          <nav>
+             <div class="menu1">
+                <ul>
+                    <li><a href="#"><h2>Special-Order</h2></a></li>
+                    <li><a href="#"><h2>Showcase</h2></a></li>
+                    <li><a href="#"><h2>PT</h2></a></li>
+                    <li><a href="#"><h2>29Magazine</h2></a></li>
+                </ul>
+             </div>
+             <div class="menu2">
+                <ul>
+                    <li><a href="sub1.html">BEST</a></li>
+                    <li><a href="#">FASHION&amp;BEAUTY</a>
+                        <ul class="submenu1">
+                            <li><a href="sub2.html">WOMAN</a></li>
+                            <li><a href="#">MAN</a></li>
+                            <li><a href="#">KIDS</a></li>
+                            <li><a href="#">BEAUTY</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="#">LIFESTYLE</a>
+                        <ul class="submenu1">
+                            <li><a href="#">Interior</a></li>
+                            <li><a href="#">Kitchen</a></li>
+                            <li><a href="#">Electronics</a></li>
+                            <li><a href="#">Digital</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="#">FOOD</a></li>
+                    <li class="et"><a href="#">Event</a></li>
+                    <li class="et"><a href="#">Lookbook</a></li>
+                </ul>
+             </div>
+            </nav>
+            <div class="headicon"> 
+                <span class="material-symbols-outlined">
+                    search
+                    </span>
+                    <span class="material-symbols-outlined">
+                        shopping_bag
+                        </span>
+                        <span class="material-symbols-outlined">
+                            person
+                            </span>
+              <span class="material-symbols-outlined">
+                login
+                </span>
+            </div>
+        </div>
+      </header>
 
   <div class="container">
     <!-- 사이드바 -->
@@ -201,6 +325,121 @@
             <div class="price"> 49,000won</div>
               </div>
             </a>
+          </div></main>
+  <footer>
+    <div class="foot">
+        <div class="fo1">
+             <div class="fosb1"> 
+                  <h3>고객문의 1660-2929</h3>
+                  <p>운영시간 : 평일 9:00~18:00 (점심시간: 12:00 ~ 13:00 제외)</p>
+                  <ul>
+                     <li>
+                     <a href="#" style="color: #fff;">FAQ</a></li>
+                     <li>
+                     <a href="#" style="color: #fff;">취소/교환/반품 내역</a></li>
+                  </ul>
+             </div>
+             <div class="sns">
+                <ul>
+                <li><a href="#"><img src="img/ins.png"></a></li>
+                <li><a href="#"><img src="img/ap.png"></a></li>
+                <li><a href="#"><img src="img/goo.png"></a></li>
+                <li><a href="#"><img src="img/ap.png"></a></li>
+                </ul>
+             </div>
+        </div>
 
+        <div class="fo2">
+             <div class="fonotice">
+                  <ul>
+                      <li><h3>NOTICE</h3></li>
+                          <ul style="font-weight: lighter;">
+                          <li><a href="#">[당첨자 발표] 폴라앳홈 쇼케이스 포토리뷰 이벤트 당첨자 발표</a></li>
+                          <li><a href="#">[공지] 29CM 고객센터 전화번호 변경 안내</a></li>
+                          <li><a href="#">[공지] 29CM 안전 거래 정책 위반 행위에 대한 조사 및 제재 사항 안내</a></li>
+                          <li><a href="#">[공지] 29CM 설 연휴 고객센터 휴무 및 배송/반품 일정 안내</a></li>
+                          <li><a href="#">[공지] 개인정보 처리방침 개정 예정 안내 (시행일: 2024년 10월 23일)</a></li>
+                          </ul>
+                 </ul>  
+             </div>
+
+             <div class="fosb2">
+                  <ul>
+                      <li><h3>ABOUT US</h3></li>
+                      <ul>
+                      <li><a href="#">29CM 소개</a></li>
+                      <li><a href="#">인재채용</a></li>
+                      <li><a href="#">상시 할인 혜택</a></li>
+                      </ul>
+                 </ul>  
+             </div>
+             <div class="fosb2">
+                  <ul>
+                      <li><h3>MY ORDER</h3></li>
+                      <ul>
+                      <li><a href="#">주문배송</a></li>
+                      <li><a href="#">취소/교환/반품 내역</a></li>
+                      <li><a href="#">증빙서류발급</a></li>
+                      </ul>
+                  </ul> 
+             </div>
+
+             <div class="fosb2">
+                  <ul>
+                      <li><h3>MY ACCOUNT</h3></li>
+                      <ul>
+                      <li><a href="#">회원정보 수정</a></li>
+                      <li><a href="#">회원등급</a></li>
+                      <li><a href="#">마일리지 현황</a></li>
+                      <li><a href="#">쿠폰</a></li>
+                      </ul>
+                  </ul>  
+             </div>
+             <div class="fosb2">
+                  <ul>
+                      <li><h3>HELP</h3></li>
+                      <ul>
+                      <li><a href="#">1:1문의</a></li>
+                      <li><a href="#">마케팅 제휴, 입점, 대량주문 문의</a></li>
+                      <li><a href="#">상품 Q&A내역</a></li>
+                      <li><a href="#">공지사항</a></li>
+                      <li><a href="#">FAQ</a></li>
+                      <li><a href="#">고객의 소리</a></li>
+                      </ul>
+                  </ul>  
+             </div>
+        </div>
+        <div class="fo3">
+            <div class="folink" style="margin-bottom: 0.3%;">
+                 <ul>
+                     <li><a href="#">개인정보처리방침</a></li>
+                     <li ><a href="#">이용약관</a></li>
+                     <li><a href="#">분쟁해결기준</a></li>
+                     <li><a href="#">안전거래센터</a></li>
+                     <li><a href="#">결제대행 위탁사</a></li>
+                 </ul>
+            </div>
+                 <ul style="font-size: 14px;">
+                     <li>상호명 : 주식회사 무신사 (MUSINDA Co, Ltd.)</li>
+                     <li>사업장소재지: 서울특별시 성동구 이차산로 13길 11, 1층 (성수동2가, 무신사캠퍼스 엔1)</li>
+                     <li>팩스 : 070-8622-7737</li>
+                     <li>사업자등록번호 : 211-88-79575</li>
+                 </ul>
+                 <ul style="display:flex; font-size: 14px;">
+                     <li>통신판매업신고 : 2022-서울성동-01952</li>
+                     <li style="margin-left: 0.3%; padding:0.2%; background-color: rgb(230, 230, 230); font-weight:400;"><a href="#">사업자 정보 확인</a></li>
+                 </ul>
+                 <ul style="font-size: 14px;">
+                     <li>전화번호 : 1660-2929</li>
+                     <li>이메일 : customer@29cm.co.kr</li>
+                     <li>대표 : 조민호, 박준모</li>
+                     <li>개인정보 보호 책임자 : 이재환</li>
+                     <li>호스팅서비스 : (주)무신사</li>
+                 </ul>
+            <p style="display: inline-block; margin:0 1%; font-size: 14px; margin-bottom: 2%;">
+            일부 상품의 경우 29CM는 통신판매의 당사자가 아닌 통신판매중개자로서 상품, 상품정보, 거래에 대한 책임이 제한될 수 있으므로, 각 상품 페이지에서 구체적인 내용을 확인하시기 바랍니다.
+            </p>
+         </div>
+  </footer>
 </body>
 </html>
