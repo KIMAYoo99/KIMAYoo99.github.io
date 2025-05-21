@@ -127,120 +127,27 @@ nav>ul>li>a:hover {
 }
 
 h1{color: #ffffffa9;
-	font-size: 10vw;
+	font-size: 3vw;
 	line-height: 1;
-	font-weight: 900;
+	font-weight: 400;
      text-align: center;
     margin-bottom: 5%;}
 
 /*프로필*/
-.card {
-  max-width: 1000px;
-  min-height: 600px;
+.card {display: flex; 
+  max-width: 1400px;
   margin: auto;
   overflow: hidden;
   position: relative;
   z-index: 1;
-  background-color: rgba(255, 255, 255, 0.877);
-  display: flex;
-  justify-content: center;
-  transition: 0.3s;
+  background-color: rgba(255, 255, 255, 0.767);
   flex-direction: column;
   border-radius: 16px;
   box-shadow: 0 0 0 8px rgba(255, 255, 255, 0.342);
 }
 
-.card[data-state="#about"] {
-  height: 600px;
-}
-.card[data-state="#about"] .card-main {
-  padding-top: 0;
-}
-
-.card[data-state="#contact"] {
-  height: 600px;
-}
-
-.card[data-state="#experience"] {
-  height: 600px;
-}
-
-.card.is-active .card-fullname,
-.card.is-active .card-jobtitle {
-  left: 86px;
-  transform: none;
-}
-.card.is-active .card-fullname {
-  bottom: 18px;
-  font-size: 19px;
-}
-.card.is-active .card-jobtitle {
-  bottom: 16px;
-  letter-spacing: 1px;
-  font-size: 10px;
-}
-.card-fullname {color: #000000;
-  position: absolute;
-  bottom: 0;
-  font-size: 22px;
-  font-weight: 700;
-  text-align: center;
-  white-space: nowrap;
-  transform: translateY(30px) translateX(-50%);
-  left: 50%;
-}
-
-.card-jobtitle {
-  position: absolute;
-  bottom: 0;
-  font-size: 11px;
-  white-space: nowrap;
-  font-weight: 500;
-  opacity: 0.7;
-  text-transform: uppercase;
-  margin:0;
-  left: 50%;
-  transform: translateX(-6%) translateY(16px);
-}
-
-.card-main {
-  position: relative;
-  flex: 1;
-  display: flex;
-  padding-top: 10px;
-  flex-direction: column;
-}
-
-.card-subtitle {color: #000000;
-  font-weight: 700;
-  font-size: 20px;
-  margin-bottom: 8px;
-}
-
-.card-content {
-  padding: 20px;
-}
-
-
-@-webkit-keyframes fadeIn {
-  0% {
-    opacity: 0;
-    transform: translatey(40px);
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-    transform: translatey(40px);
-  }
-  100% {
-    opacity: 1;
-  }
-}
+.card-content{display: flex; justify-content: center;padding:3%;}
+.card-content>img{width: 100%;}
 
 
 .sectiontitle{display: flex; justify-content: center; margin-bottom: 0.5%; margin-top:3.5%; 
