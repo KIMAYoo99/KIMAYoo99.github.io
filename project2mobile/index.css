@@ -248,13 +248,14 @@ body {
 }
 
 /* BOX2 */
-.swiper2 {width: 100%; height: 600px; margin: 0 auto;}
+.swiper2 {width: 100%; height: 700px; margin: 0 auto;}
 
     .swiper2 .swiper-slide {
       
       border-radius: 12px;
       overflow: hidden;
       box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+      background-color: #fff;
     }
 
     .swiper2 .swiper-slide img {
@@ -273,17 +274,22 @@ body {
       color: inherit; 
     }
 
+    .swiper2 .slide-content {
+  text-align: center;
+  padding: 10px 0; /* 여백은 필요에 따라 조정 */
+}
+
     .swiper2 h1 {
       font-size: 25px;
       margin-bottom: 10px;
     }
 
-    .swiper2 p {
+    .swiper2 p { margin: 2%;
       font-size: 23px;
     }
 
     .swiper2 span {
-      border: 1px solid gray; padding:0.2%; background-color: white;
+      border: 1px solid gray; padding:1%; background-color: white;
       font-size: 20px;
       color: #888;
     }
@@ -366,6 +372,8 @@ body {
       height: 100%;
       object-fit: cover;
     }
+
+    
 
 /*footer*/
     footer{width: 100%; height: 30vh; margin-top: 1%; }

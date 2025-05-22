@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', () => {
       loop: true,
       effect: "creative",
       creativeEffect: {
-        prev: { shadow: true, translate: [0, 0, -400] },
+        prev: { shadow: false, translate: [0, 0, -200] },
         next: { translate: ["100%", 0, 0] },
       }
     });
