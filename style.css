@@ -223,6 +223,7 @@ li {
   opacity: 0;
   transition: opacity 0.3s ease;
   pointer-events: none;
+  font-size: 25px;
 }
 
 .gallery:hover h2 {
@@ -249,7 +250,7 @@ display: flex; justify-content: center; width: 35%;}
 
  .modal-container {
   width: 100%;
-  max-width: 900px; /* 보기 좋은 최대 너비로 조정 */
+  max-width: 1200px; /* 보기 좋은 최대 너비로 조정 */
   max-height: 100%;
   margin: auto;
   background-color: #fff;
@@ -282,6 +283,7 @@ display: flex; justify-content: center; width: 35%;}
   font-weight: 700;
   margin: 0;
   line-height: 1.2;
+  color: rgb(0, 22, 119);
 }
 
 
