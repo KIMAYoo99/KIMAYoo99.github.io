@@ -132,6 +132,9 @@ nav>ul>li>a:hover {
       width: 90%;
       height: 90%;
       overflow: hidden;
+      margin-top: -5%;
+      margin-bottom: 2%;
+      
     }
 
     video {
