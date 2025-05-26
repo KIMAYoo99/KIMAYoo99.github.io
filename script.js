@@ -15,6 +15,63 @@
       behavior: "smooth"
     });
   });
+//intro//
+ const video = document.getElementById('myVideo');
+
+  let hasPlayedOnce = false;
+  let isHovering = false;
+  let isLooping = false;
+
+  // 마지막 반복 구간 설정 (예: 마지막 3초 반복)
+  let loopStart = 8;
+  let loopEnd = 14;
+
+  // 첫 페이지 진입 시 전체 재생
+  window.addEventListener('load', () => {
+    video.play().then(() => {
+      // 재생 완료 후 마지막 구간 반복 시작
+      video.addEventListener('ended', () => {
+        hasPlayedOnce = true;
+
+        loopEnd = video.duration;
+        loopStart = video.duration - 7; // 마지막 3초 구간
+
+        startLoop();
+      });
+    }).catch(err => {
+      console.error('자동 재생 실패:', err);
+    });
+  });
+
+  // timeupdate로 반복 감시
+  video.addEventListener('timeupdate', () => {
+    if (isLooping && !isHovering && video.currentTime >= loopEnd) {
+      video.currentTime = loopStart;
+    }
+  });
+
+  // 반복 재생 시작
+  function startLoop() {
+    isLooping = true;
+    isHovering = false;
+    video.currentTime = loopStart;
+    video.play();
+  }
+
+  // 반복 재생 중단 후 처음부터 재생
+  function playFromBeginning() {
+    isLooping = false;
+    isHovering = true;
+    video.currentTime = 0;
+    video.play();
+  }
+
+  // 마우스 오버 시: 처음부터 재생
+  video.parentElement.addEventListener('mouseenter', () => {
+    if (hasPlayedOnce) {
+      playFromBeginning();
+    }
+  });
 
 //프로필//
 const buttons = document.querySelectorAll(".card-buttons button");
